@@ -2,6 +2,7 @@
 
 import os 
 import time
+#set up debian server on proxmox
 
 #update server
 print('\n*****Getting updates...*****\n\n')
