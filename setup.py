@@ -8,10 +8,12 @@ import time
 print('\n=====Getting updates=====\n\n')
 os.system('apt-get update')
 os.system('apt-get upgrade')
+print('Updates complete...')
 
 #install preferred packages
 print('\n=====Getting preferred packages=====\n\n')
 os.system('apt-get install sudo vim nano wget net-tools')
+print('Preferred packages installation complete...')
 
 #configure and start SSH
 print('\n=====Configuring SSH=====\n\n')
