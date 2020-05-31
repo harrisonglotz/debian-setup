@@ -27,7 +27,6 @@ os.system('timedatectl status')
 print('\n=====Creating sudo user=====\n\n')
 username = input('Enter username for sudo user: ')
 os.system(f'adduser {username}')
-os.system(f'passwd {username}')
 os.system(f'usermod -aG sudo {username}')
 
 print('*****Set up script complete!*****')
