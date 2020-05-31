@@ -21,6 +21,8 @@ os.system('cd')
 os.system('cd /etc/ssh')
 os.system('rm sshd_config')
 os.system('curl -o sshd_config https://raw.githubusercontent.com/harrisonglotz/debian-setup/master/sshd_config')
+os.system('systemctl restart sshd')
+
 
 print('\n=====Starting SSH=====\n\n')
 os.system('systemctl start sshd')
