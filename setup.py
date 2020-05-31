@@ -13,7 +13,13 @@ os.system('apt-get upgrade')
 print('\n=====Getting preferred packages=====\n\n')
 os.system('apt-get install sudo vim nano wget net-tools')
 
-#start SSH
+#configure and start SSH
+print('\n=====Configuring SSH=====\n\n')
+os.system('cd')
+os.system('cd /etc/ssh')
+os.system('rm sshd_config')
+os.system('curl -o sshd_config https://raw.githubusercontent.com/harrisonglotz/debian-setup/master/sshd_config')
+
 print('\n=====Starting SSH=====\n\n')
 os.system('systemctl start sshd')
 os.system('systemctl restart sshd')
