@@ -12,7 +12,7 @@ print('Updates complete...')
 
 #install preferred packages
 print('\n=====Getting preferred packages=====\n\n')
-os.system('apt-get install sudo vim nano wget net-tools')
+os.system('apt-get install sudo vim nano wget net-tools python3-pip')
 print('Preferred packages installation complete...')
 
 #start SSH
